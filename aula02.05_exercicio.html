@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1> Lógica de programação com Javascript</h1>
+</body>
+<script>
+    const JOGADOR1 = parseInt(prompt(`Jogador 1 escolha um número.`));
+    const JOGADOR2 = parseInt(prompt(`Jogador 2 escolha um número.`));
+
+    let aleatorio = parseInt(Math.random() * 2);
+    console.log(aleatorio);
+
+    if (JOGADOR1 == JOGADOR2) {
+        alert(`Empate!`);
+    } else {
+        if (JOGADOR1 > JOGADOR2) {
+            if (aleatorio === 1) {
+                alert(`Jogador 1 venceu!`);
+            } else {
+                alert(`Jogador 2 venceu!`);
+            }
+        } else {
+            if (aleatorio === 0) {
+                alert(`Jogador 1 venceu!`);
+            } else {
+                alert(`Jogador 2 venceu!`);
+            }
+        }
+    }
+    //precisei ver por cima no chatGPT e em um comentário do vídeo. Eu não sabia que podia por if e mais if.
+</script>
+
+</html>

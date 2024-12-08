@@ -1,0 +1,19 @@
+PEDIR PARA O USUARIO DIGITAR DOIS NUMEROS E MOSTRAR UM BOOLEAN(TRUE OR FALSE) INDICANDO SE A MÉDIA FOR MAIOR QUE 5
+----------------------------------------------------------------------
+media - (n1+n2)/2
+
+OPERADORES DE COMPARAÇÃO 
+
+== IGUALDADE (VALOR) não leva em consideração o tipo
+!= Diferente (valor)
+=== Igualdade (valor e tipo)
+!== Difernre (valor e tipo)
+> Maior
+>= Maior ou igual
+< Menor
+<= Menor ou igual
+
+Operador = não é operador de comparação e sim de atribuição
+Em algumas linguagens o <> é o operador de "diferente".
+
+sempre que é feita uma comparação ela se torna um boolean ou é verdade ou é mentira

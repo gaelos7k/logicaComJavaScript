@@ -1,0 +1,1 @@
+Tudo que eu anoto durante as aulas e os exercicos propostos bem como os arquivos usados para ensino.

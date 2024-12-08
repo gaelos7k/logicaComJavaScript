@@ -1,0 +1,7 @@
+PERGUNTAR O NOME DO USUARIO E MOSTRAR UMA MENSAGEM DE BOAS VINDAS - ok
+-----------------------------------------------------------------
+PROBLEMA DA AULA = PEDIR PARA O USUARIO DIGITAR 2 NUMEROS E MOSTRAR A SOMA - ok
+-----------------------------------------------------------------
+PEDIR PARA O USUARIO DIGITAR DOIS NUMEROS E MOSTRAS A MEDIA - ok
+-----------------------------------------------------------------
+PEDIR PARA O USUARIO DIGITAR DOIS NUMEROS E MOSTRAR UM BOOLEAN(TRUE OR FALSE) INDICANDO SE A MÉDIA FOR MAIOR QUE 5 - ok

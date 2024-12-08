@@ -1,0 +1,27 @@
+PROBLEMA DA AULA = PEDIR PARA O USUARIO DIGITAR 2 NUMEROS E MOSTRAR A SOMA
+
+// utilizado para fazer comentario de uma linha em javascript
+
+/*
+bom para fazer comentario
+com mais linhas em javascript 
+*/
+
+lembrando que variavel armazena as informações e junto com um prompt armazena a entrada do dado do usuario
+
+sempre que pegar alguma informação do usuario vai vir como texto, então há necessidade de conversão
+
+conversao de tipo texto para o tipo numero no problema de hoje.
+
+typeof mostra o tipo de dado que uma variavel armazena
+
+parseInt(xxx) - é o comando de conversão, para manter armazena usar var n = parseInt(xxx) ELE NÃO ARRENDONDA NEM PARA BAIXO NEM PARA CIMA, ELE DESCARTA OS DECIMAIS
+
+parseFloat(xxx) - conversor que mantes as casas decimais.
+
+para usar uma váriavel já criada basta digitar o valor dela e não "criá-la" novamente.
+
+Fizemos um desafio u acertei parcialmente o exercicio, tive um raciocinio errado na hora dos alert, pois pensei que o usuário quem teria de decidir qual operação aritmética ele faria, ai conguir fazer o alert um por um de cada vez
+
+NaN = not a number 
+

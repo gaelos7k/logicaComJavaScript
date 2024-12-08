@@ -1,0 +1,3 @@
+-Lógica de programação é a sequência de passos a serem executados em ordem capaz de resolver um problema específico.
+-Sequencia logica = algoritmo. Algoritmo nada mais é que uma sequencia logica de passos para se chegar em um objetivo, voltado a resolução de problemas de computação. Ex: fazer um bolo, pegar um ovo, bater os igredientes e etc.
+RESUMINDO = LOGICA DE PROGRAMAÇÃO SÃO TODOS OS PASSOS DESMEMBRADOS PARA SE CHEGAR EM UM OBJETIVO/RESOLVER UM PROBLEMA. ex: atravessar a rua você aguarda na rua olha para um lado se vier carro aguarda, se não vier olha para o outro se vier aguarda, se não vie atravessa.

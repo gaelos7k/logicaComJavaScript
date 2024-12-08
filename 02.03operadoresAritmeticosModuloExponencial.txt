@@ -1,0 +1,10 @@
+PEDIR PARA O USUARIO DIGITAR DOIS NUMEROS E MOSTRAS A MEDIA
+-----------------------------------------------------------
++ Adição
+- Subtração
+* Multiplicação
+/ Divisão
+% Módulo - mostra o resto da divisão (a sobra)
+** Exponenciação 
+++ Incremento - mostra o valor primerio e depois soma 1 (se colocar antes ele já faz a conta antes de mostar o valor original primeiro)
+-- Decremento - mostra o valor primerio e depois subtrai 1 (se colocar antes ele já faz a conta antes de mostar o valor original primeiro)

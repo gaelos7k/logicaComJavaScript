@@ -1,0 +1,18 @@
+PERGUNTAR O NOME DO USUARIO E MOSTRAR UMA MENSAGEM DE BOAS VINDAS
+<meta charset="utf-8"> problema de acentuação da página
+
+<script></script> quando o browser olha essas tags ele muda a maneira de interpretar. Ou seja é diferente do html, vai interpretar o código, por isso não precia compilar, no javascript vai ser ecrito dentro dessas tags e interpretado pelo browser, se der erro mostra no browser.
+
+Mesmo que não precise ; no final do código em javascript é uma boa prática que mostra organização caso seja avaliado
+
+alert(""); = alerta na página
+prompt(""); = obter alguma informação do usuário
+
+Váriaveis = espaço reservado na memoria da maquina capaz de armaxenar um valor. (const ex =) comando da variavel.
+
+tudo que não é texto tem que estar fora de ""
+
+no javascript para concatenação(juntar 2 ou mais informações no código) utilizamos o sinal de +
+
+Tipos de dados que uma variavel pode conter = string, numero inteiro, numero real(usar . ), boleano(true ou false), array, objetos, null, undefined e NaN
+                
