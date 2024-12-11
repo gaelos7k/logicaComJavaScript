@@ -1,0 +1,12 @@
+Operadores lógicos:
+
+! not - inversão
+&& and - todas as condições precisam ser verdadeiras para ser true
+|| or - somente uma das condições precisa ser verdadeira para ser true
+
+Ordem de execução é:
+
+1) not
+2) and
+3) or
+
