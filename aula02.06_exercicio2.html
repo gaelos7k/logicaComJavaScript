@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1> Lógica de programação com Javascript</h1>
+</body>
+<script>
+    const jogador1 = parseInt(prompt(`Jogador 1 escolha um número.`));
+    const jogador2 = parseInt(prompt(`Jogador 2 escolha um número.`));
+
+    let aleatorio = parseInt(Math.random() * 2);
+    console.log(aleatorio);
+
+    if (jogador1 == jogador2) {
+        alert(`Empate!`);
+    } else if (aleatorio === 1 && jogador1 > jogador2 || aleatorio === 0 && jogador1 < jogador2) {
+        alert(`Jogador 1 venceu!`);
+    } else {
+        alert(`Jogador 2 venceu!`);
+    }
+</script>
+
+</html>
