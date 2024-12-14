@@ -1,0 +1,7 @@
+document.write() não é usado de forma profissional.
+
+repetições:
+
+for
+while
+do ... while
