@@ -1,0 +1,13 @@
+Quando eu quero executar pelo menos uma coisa antes do loop de fato eu utilizo a condição de repetição do...while. QUANDO EU PRECISO GARANTIR QUE SEJA EXECUTADO 1 VEZ.
+
+do {
+        document.write((numero + ' x ' + index + ' é igual a: ' + (numero * index) + '<br>'));
+        index = index + 1;
+
+    } while (indice <= 1)
+	document.write('Saiu do loop');
+
+
+indice = indice + 1; |  TUDO IGUAL
+indice += 1;         |  TUDO IGUAL
+indice++;            |  TUDO IGUAL  

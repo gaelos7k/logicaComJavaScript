@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Fixação estrutura de repetição </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1> Chose a number who will mutiplied for 1000!</h1>
+
+    <script> /*Pedir para o usuário digitar um número que será multiplicado 1000 vezes e exibido no navegador. A cada dezena insira uma linha para separar e deixar mais organizado.*/
+        const numberChosed = parseInt(prompt('Escolha um número que será multiplicado até 1000.'));
+
+        for (let i = 0; i <= 1000; i++) {
+            document.write(`${numberChosed} x ${i} = ${numberChosed * i} <br>`);
+            if (i % 10 === 0 && i > 0) {
+                document.write('<hr>');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

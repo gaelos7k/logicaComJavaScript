@@ -13,12 +13,19 @@
 <script>
 
     const numero = parseInt(prompt('Escolha um número para ser multiplicado por 1000'));
+    let index = 0;
 
-    for (let i = 1; i <= 1000; i++) {
-        document.write(`${numero} x ${i}: ${numero * i}` + '<br>'); //'<br>' Para quebra de linha na página.
+    while (index <= 1000) {
+        document.write((numero + ' x ' + index + ' é igual a: ' + (numero * index) + '<br>'));
+
+        if (index % 10 == 0 && index > 0) {
+            document.write('<hr>');
+        }
+
+        index = index + 1;
     }
 
-    document.write('Saiu do loop');
+    document.write('Saiu do loop.');
 
 </script>
 
