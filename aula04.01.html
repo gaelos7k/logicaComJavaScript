@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com Javascript</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <button onclick='mostrarTabuada()'>Criar tabuada</button> <!--O botão executará a função ao clicarmos-->
+    <button onclick='limparTabuada()'>Limpar tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        function mostrarTabuada() {  //Será chamada no click do botão no HTML.
+
+            const number = parseInt(prompt('Insira um número para multiplicar 1000 vezes'));
+            let index = 1;
+            let mensagem = '';
+
+            while (index <= 1000) {
+                mensagem += `${number} x ${index} = ${number * index} <br>`;
+                index++;
+            }
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada() {
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+
+        const output = document.querySelector('#output');
+
+    </script>
+
+</body>
+
+</html>

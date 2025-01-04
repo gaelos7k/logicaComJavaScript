@@ -1,0 +1,71 @@
+<!--Faça uma mini calculadora, que peça um número inicial e tenha botões na tela para somar e pedir um novo 
+para fazer a operação-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora improvisada</title>
+</head>
+
+<body>
+
+    <h1>Teste de funções</h1>
+
+    <button onclick="soma()">+</button>
+    <button onclick="subtracao()">-</button>
+    <button onclick="divisao()">/</button>
+    <button onclick="multiplicacao()">*</button>
+    <button onclick="limpar()">Limpar</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        document.querySelector('#output');
+
+        let number = parseInt(prompt('Insira um número'));
+        output.innerHTML = number;
+
+        function soma() {
+            let numeroParaSomar = parseInt(prompt('Escolha o número para ser somado.'));
+            let numeroSomado = number + numeroParaSomar;
+            output.innerHTML = numeroSomado;
+            number = numeroSomado;
+        }
+
+        function subtracao() {
+            let numeroParaSubtrair = parseInt(prompt('Escolha o número para ser subtraido.'));
+            let numeroSubtraido = number - numeroParaSubtrair;
+            output.innerHTML = numeroSubtraido;
+            number = numeroSubtraido;
+        }
+
+        function divisao() {
+            let numeroParaDividir = parseInt(prompt('Escolha o número para ser dividido.'));
+            let numeroDividido = number / numeroParaDividir;
+            output.innerHTML = numeroDividido;
+            number = numeroDividido;
+        }
+
+        function multiplicacao() {
+            let numeroParaMultiplicar = parseInt(prompt('Escolha o número para ser multiplicado.'));
+            let numeroMultiplicado = number * numeroParaMultiplicar;
+            output.innerHTML = numeroMultiplicado;
+            number = numeroMultiplicado;
+        }
+
+        function limpar() {
+            let limpa = '';
+            output.innerHTML = limpa;
+            number = 0;
+        }
+
+    </script>
+
+</body>
+
+</html>

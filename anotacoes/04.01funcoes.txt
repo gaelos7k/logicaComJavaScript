@@ -1,0 +1,14 @@
+Vamos ver o básico de DOM para conseguir resolver o problema.
+
+Script tem que ser inserido antes de fechar a tag body e isso é uma regra.
+
+Toda vez que eu preciso, a partir da tag script acessar algum elemento no HTML eu utilizo sempre a palavra document."algumaCoisa"
+
+.innerHTML inserir um conteudo qualquer dentro de uma váriavel a partir do javascript.
+
+Função é um trecho de código que eu posso utilizar mais de uma vez.
+
+***CORRIGI DECLARAÇÕES DE FUNÇÕES E CORRIGI O LOCAL ONDE ELAS FORAM DECLARADAS***
+
+Funções void = São funções que não retornam nenhum valor. São úteis quando queremos reaproveitar código.
+

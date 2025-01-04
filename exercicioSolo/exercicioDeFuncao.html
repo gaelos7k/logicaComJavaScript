@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com JavasCript</title>
+</head>
+
+<body>
+
+    <h1> Funções </h1>
+    <button onclick='criarTabuada()'>Criar tabuada</button>
+    <button onclick='limparTabuada()'>Limpar tabuada</button>
+
+    <div id='output'></div>
+
+    <script>
+        let mensagem = '';
+
+        function criarTabuada() {
+            let number = Number(prompt('Insira um número.'));
+            let index = 0;
+            mensagem = '';
+
+            while (index <= 1000) {
+                mensagem += `${number} x ${index}: ${number * index} <br>`;
+                index++;
+            }
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada() {
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+
+        const output = document.querySelector('#output');
+
+    </script>
+
+</body>
+
+</html>
