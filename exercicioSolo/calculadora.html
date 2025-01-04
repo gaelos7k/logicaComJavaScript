@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <button onclick="somar()">+</button>
+    <button onclick="dividir()">/</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="outro()">Escolha outro</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        document.querySelector('#output');
+
+        let number = parseInt(prompt('Insira um número.'));
+        output.innerHTML = number;
+
+        function somar() {
+            let numero = parseInt(prompt('Escolher um número que será acresido ao número mostrado.'));
+            let soma = number + numero;
+            output.innerHTML = soma;
+            number = soma;
+        }
+
+        function dividir() {
+            let numero = parseInt(prompt('Escolha um número que fará a divisão do número mostrado.'));
+            let divisao = number / numero;
+            output.innerHTML = divisao;
+            number = divisao;
+        }
+
+        function subtrair() {
+            let numero = parseInt(prompt('Escolha um número que será subtraido do número mostrado.'));
+            let subtracao = number - numero;
+            output.innerHTML = subtracao;
+            number = subtracao;
+        }
+
+        function multiplicar() {
+            let numero = parseInt(prompt('Escolha um número que multiplicará o número mostrado.'));
+            let multiplicacao = number * numero;
+            output.innerHTML = multiplicacao;
+            number = multiplicacao;
+        }
+
+        function outro() {
+            let numero = parseInt(prompt('Escolha outro número para fazer operações.'))
+            output.innerHTML = numero;
+            number = numero;
+        }
+
+    </script>
+
+</body>
+
+</html>
