@@ -1,0 +1,3 @@
+Para passar mais de um parametro é utilizado ,
+
+funcçoes que recebem parametros sao uteis para reaproveitar ainda mais os códigos
