@@ -24,37 +24,47 @@ para fazer a operação-->
 
     <script>
 
-        const output = document.querySelector('#output');
+        function escreve() {
+            const output = document.querySelector('#output');
+            output.innerHTML = number;
+        }
 
         let number = parseInt(prompt('Insira um número'));
         escreve();
 
-        function escreve() {
-            output.innerHTML = number;
-        }
 
-        function calcular() {
+        function calcular(simbolo) {
 
             let numeroEscolhido = parseInt(prompt('Insira um número'));
-            if ('+') {
-                let numeroCalculado = number + numeroEscolhido;
-                number = numeroCalculado;
-                escreve();
-            } else if ('-') {
-                let numeroCalculado = number - numeroEscolhido;
-                number = numeroCalculado;
-                escreve();
-            } else if ('*') {
-                let numeroCalculado = number * numeroEscolhido;
-                number = numeroCalculado;
-                escreve();
-            } else {
-                let numeroCalculado = number / numeroEscolhido;
-                number = numeroCalculado;
-                escreve();
+            let numeroCalculado;
+
+            switch (simbolo) {
+                case '+':
+                    numeroCalculado = number + numeroEscolhido;
+                    number = numeroCalculado;
+                    escreve();
+                    break;
+
+
+                case '-':
+                    numeroCalculado = number - numeroEscolhido;
+                    number = numeroCalculado;
+                    escreve();
+                    break;
+
+                case '/':
+                    numeroCalculado = number / numeroEscolhido;
+                    number = numeroCalculado;
+                    escreve();
+                    break;
+
+                case '*':
+                    numeroCalculado = number * numeroEscolhido;
+                    number = numeroCalculado;
+                    escreve();
+                    break;
             }
         }
-
     </script>
 
 </body>
