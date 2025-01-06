@@ -15,11 +15,10 @@ para fazer a operação-->
 
     <h1>Teste de funções</h1>
 
-    <button onclick="soma()">+</button>
-    <button onclick="subtracao()">-</button>
-    <button onclick="divisao()">/</button>
-    <button onclick="multiplicacao()">*</button>
-    <button onclick="limpar()">Limpar</button>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('/')">/</button>
+    <button onclick="calcular('*')">*</button>
 
     <div id="output"></div>
 
@@ -28,40 +27,20 @@ para fazer a operação-->
         const output = document.querySelector('#output');
 
         let number = parseInt(prompt('Insira um número'));
-        output.innerHTML = number;
+        escreve();
 
-        function soma() {
-            let numeroParaSomar = parseInt(prompt('Escolha o número para ser somado.'));
-            let numeroSomado = number + numeroParaSomar;
-            output.innerHTML = numeroSomado;
-            number = numeroSomado;
+        function escreve() {
+            output.innerHTML = number;
         }
 
-        function subtracao() {
-            let numeroParaSubtrair = parseInt(prompt('Escolha o número para ser subtraido.'));
-            let numeroSubtraido = number - numeroParaSubtrair;
-            output.innerHTML = numeroSubtraido;
-            number = numeroSubtraido;
-        }
+        function calcular() {
 
-        function divisao() {
-            let numeroParaDividir = parseInt(prompt('Escolha o número para ser dividido.'));
-            let numeroDividido = number / numeroParaDividir;
-            output.innerHTML = numeroDividido;
-            number = numeroDividido;
-        }
-
-        function multiplicacao() {
-            let numeroParaMultiplicar = parseInt(prompt('Escolha o número para ser multiplicado.'));
-            let numeroMultiplicado = number * numeroParaMultiplicar;
-            output.innerHTML = numeroMultiplicado;
-            number = numeroMultiplicado;
-        }
-
-        function limpar() {
-            let limpa = '';
-            output.innerHTML = limpa;
-            number = 0;
+            let numeroEscolhido = parseInt(prompt('Insira um número'));
+            if ('+') {
+                let numeroSomado = number + numeroEscolhido;
+                number = numeroSomado;
+                escreve();
+            }
         }
 
     </script>
