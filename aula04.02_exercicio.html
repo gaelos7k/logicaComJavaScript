@@ -36,33 +36,27 @@ para fazer a operação-->
         function calcular(simbolo) {
 
             let numeroEscolhido = parseInt(prompt('Insira um número'));
-            let numeroCalculado;
 
             switch (simbolo) {
+
                 case '+':
-                    numeroCalculado = number + numeroEscolhido;
-                    number = numeroCalculado;
+                    number += numeroEscolhido;
                     escreve();
                     break;
 
-
                 case '-':
-                    numeroCalculado = number - numeroEscolhido;
-                    number = numeroCalculado;
+                    number -= numeroEscolhido;
                     escreve();
                     break;
 
                 case '/':
-                    numeroCalculado = number / numeroEscolhido;
-                    number = numeroCalculado;
+                    number /= numeroEscolhido;
                     escreve();
                     break;
 
                 case '*':
-                    numeroCalculado = number * numeroEscolhido;
-                    number = numeroCalculado;
+                    number *= numeroEscolhido;
                     escreve();
-                    break;
             }
         }
     </script>
