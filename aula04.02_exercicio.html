@@ -37,8 +37,20 @@ para fazer a operação-->
 
             let numeroEscolhido = parseInt(prompt('Insira um número'));
             if ('+') {
-                let numeroSomado = number + numeroEscolhido;
-                number = numeroSomado;
+                let numeroCalculado = number + numeroEscolhido;
+                number = numeroCalculado;
+                escreve();
+            } else if ('-') {
+                let numeroCalculado = number - numeroEscolhido;
+                number = numeroCalculado;
+                escreve();
+            } else if ('*') {
+                let numeroCalculado = number * numeroEscolhido;
+                number = numeroCalculado;
+                escreve();
+            } else {
+                let numeroCalculado = number / numeroEscolhido;
+                number = numeroCalculado;
                 escreve();
             }
         }
