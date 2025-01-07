@@ -21,7 +21,7 @@
         let number = parseFloat(prompt('Escolha um número'));
 
         const validacao = () => {
-            if (isNaN(number)) {
+            while (isNaN(number) === true) {
                 number = parseFloat(prompt('Escolha um número válido!'));
             }
         }
@@ -41,7 +41,7 @@
             let numeroEscolhido = parseFloat(prompt('Escolha um número'));
 
             const validacao = () => {
-                if (isNaN(numeroEscolhido)) {
+                while (isNaN(numeroEscolhido) === true) {
                     numeroEscolhido = parseFloat(prompt('Escolha um número válido!'));
                 }
             }
