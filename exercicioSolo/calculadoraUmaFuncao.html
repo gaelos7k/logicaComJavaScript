@@ -2,12 +2,35 @@
 <html>
 
 <head>
-    <title>Logica de Programação Javascript</title>
+    <title>Calculadora</title>
     <meta charset="utf-8">
 </head>
 
 <body>
-    <h1> Lógica de programação com Javascript</h1>
+    <h1>Calculadora</h1>
+
+    <button onclick="calcula('+')">+</button>
+    <button onclick="calcula('-')">-</button>
+    <button onclick="calcula('/')">/</button>
+    <button onclick="calcula('*')">*</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        let number = parseFloat(prompt('Exolha um número'));
+
+        const escreve = () => {
+
+            const output = document.querySelector('#output');
+            output.innerHTML = number;
+
+        }
+
+        escreve();
+
+    </script>
+
 </body>
 
 </html>
