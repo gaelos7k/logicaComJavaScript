@@ -34,15 +34,17 @@
         }
 
         const calcula = (simbolo) => {
+
             let numeroEscolhido = parseFloat(prompt('Escolha um número'));
+
             switch (simbolo) {
+
                 case '+':
                     number += numeroEscolhido;
                     escreve();
                     break;
 
                 case '-':
-
                     number -= numeroEscolhido;
                     escreve();
                     break;
@@ -51,6 +53,7 @@
                     number *= numeroEscolhido;
                     escreve();
                     break;
+
                 case '/':
                     number /= numeroEscolhido;
                     escreve();
