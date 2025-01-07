@@ -29,21 +29,31 @@
 
         escreve();
 
+        let numeroEscolhido = () => {
+
+        }
+
         const calcula = (simbolo) => {
+            let numeroEscolhido = parseFloat(prompt('Escolha um número'));
             switch (simbolo) {
                 case '+':
-                    let numeroEscolhido = parseFloat(prompt('Escolha um número'));
                     number += numeroEscolhido;
                     escreve();
                     break;
 
                 case '-':
-                    numer -= numeroEscolhido;
+
+                    number -= numeroEscolhido;
                     escreve();
                     break;
 
                 case '*':
-
+                    number *= numeroEscolhido;
+                    escreve();
+                    break;
+                case '/':
+                    number /= numeroEscolhido;
+                    escreve();
             }
         }
 
