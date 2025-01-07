@@ -20,6 +20,12 @@
 
         let number = parseFloat(prompt('Escolha um número'));
 
+        const validacao = () => {
+            if (isNaN(number)) {
+                number = parseFloat(prompt('Escolha um número válido!'));
+            }
+        }
+
         const escreve = () => {
 
             const output = document.querySelector('#output');
@@ -27,30 +33,41 @@
 
         }
 
+        validacao();
         escreve();
 
         const calcula = (simbolo) => {
 
             let numeroEscolhido = parseFloat(prompt('Escolha um número'));
 
+            const validacao = () => {
+                if (isNaN(numeroEscolhido)) {
+                    numeroEscolhido = parseFloat(prompt('Escolha um número válido!'));
+                }
+            }
+
             switch (simbolo) {
 
                 case '+':
+                    validacao();
                     number += numeroEscolhido;
                     escreve();
                     break;
 
                 case '-':
+                    validacao();
                     number -= numeroEscolhido;
                     escreve();
                     break;
 
                 case '*':
+                    validacao();
                     number *= numeroEscolhido;
                     escreve();
                     break;
 
                 case '/':
+                    validacao();
                     number /= numeroEscolhido;
                     escreve();
             }
