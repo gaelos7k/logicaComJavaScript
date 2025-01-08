@@ -1,78 +1,65 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <meta charset="utf-8">
 </head>
 
 <body>
     <h1>Calculadora</h1>
-
     <button onclick="calcula('+')">+</button>
     <button onclick="calcula('-')">-</button>
-    <button onclick="calcula('/')">/</button>
     <button onclick="calcula('*')">*</button>
-
+    <button onclick="calcula('/')">/</button>
     <div id="output"></div>
 
     <script>
-
-        let number = parseFloat(prompt('Escolha um número'));
-
-        const validacao = () => {
-            while (isNaN(number) === true) {
-                number = parseFloat(prompt('Escolha um número válido!'));
-            }
-        }
-
+        let numero = parseFloat(prompt('Insira um número.'));
         const escreve = () => {
-
             const output = document.querySelector('#output');
-            output.innerHTML = number;
-
+            output.innerHTML = numero;
+        }
+        const validacao = () => {
+            while (isNaN(numero) === true) {
+                numero = parseFloat(prompt('Insira um número válido!'))
+            }
         }
 
         validacao();
         escreve();
 
         const calcula = (simbolo) => {
-
-            let numeroEscolhido = parseFloat(prompt('Escolha um número'));
+            let numeroEscolhido = parseFloat(prompt('Insira um número.'));
 
             const validacao = () => {
                 while (isNaN(numeroEscolhido) === true) {
-                    numeroEscolhido = parseFloat(prompt('Escolha um número válido!'));
+                    numeroEscolhido = parseFloat(prompt('Insira um número válido!'))
                 }
             }
 
             validacao();
 
             switch (simbolo) {
-
                 case '+':
-                    number += numeroEscolhido;
+                    numero += numeroEscolhido;
                     escreve();
                     break;
-
                 case '-':
-                    number -= numeroEscolhido;
+                    numero -= numeroEscolhido;
                     escreve();
                     break;
-
                 case '*':
-                    number *= numeroEscolhido;
+                    numero *= numeroEscolhido;
                     escreve();
                     break;
-
                 case '/':
-                    number /= numeroEscolhido;
+                    numero /= numeroEscolhido;
                     escreve();
             }
         }
-
     </script>
-
 </body>
 
 </html>
