@@ -14,6 +14,10 @@ while (numeroEscolhido != numeroSecreto) {
 
     numeroEscolhido = parseInt(prompt(`Escolha um número entre 0 e ${dificuldade}`));
 
+    while (isNaN(numeroEscolhido) === true) {
+        numeroEscolhido = parseInt(prompt(`Escolha um número entre 0 e ${dificuldade} que seja válido!`));
+    }
+
     if (numeroEscolhido === numeroSecreto) {
         alert(`Parábens você acertou com ${chute} ${palavraTentativa}`);
         break;
