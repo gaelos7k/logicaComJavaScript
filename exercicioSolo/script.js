@@ -26,5 +26,6 @@ while (numeroEscolhido != numeroSecreto) {
     } else {
         alert(`Tente novamente! O número secreto é maior que ${numeroEscolhido}`);
     }
+    
     chute++;
 }
