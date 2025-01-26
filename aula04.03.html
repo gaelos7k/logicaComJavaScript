@@ -8,28 +8,38 @@
 
 <body>
     <h1> Lógica de programação com Javascript</h1>
-    <button onclick="mostrarArea(largura, altura)">Mostrar Área</button>
-    <button onclick="mostrarArea2(largura, altura)">Mostrar Área</button>
+    <button onclick="mostrarAreaOutput()">Mostrar Área output</button>
+    <button onclick="mostrarAreaAlert()">Mostrar Área alert</button>
     <div id="output"></div>
 </body>
 
 <script>
-    const output = document.querySelector('#output');
 
-    let largura = prompt('Insira a largura do objeto.');
-    largura = parseFloat(largura);
+    function mostrarAreaOutput() {
 
-    let altura = prompt('Insira a altura do objeto.');
-    altura = parseFloat(altura);
+        let largura = prompt('Insira a largura do objeto.');
+        largura = parseFloat(largura);
 
-    function mostrarArea(l, a) {
-        const area = l * a;
-        output.innerHTML = area;
+        let altura = prompt('Insira a altura do objeto.');
+        altura = parseFloat(altura);
+
+        document.querySelector('#output').innerHTML = `a área total é: ${calculaArea(largura, altura)}`;
     }
 
-    function mostrarArea2(l, a) {
-        const area = l * a;
-        alert(area);
+    function mostrarAreaAlert() {
+
+        let largura = prompt('Insira a largura do objeto.');
+        largura = parseFloat(largura);
+
+        let altura = prompt('Insira a altura do objeto.');
+        altura = parseFloat(altura);
+
+        const area = calculaArea(largura, altura);
+        alert(`a área total é: ${area}`);
+    }
+
+    function calculaArea(l, a) {
+        return l * a;
     }
 
 </script>
