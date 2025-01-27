@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcula área</title>
-    <div id="output"></div>
+    <div style="color: white;" id="output"></div>
 </head>
 
 <body>
@@ -29,6 +29,28 @@
 
     <script>
 
+        const mostrarAreaAlert = () => {
+
+            const altura = parseInt(prompt(`Insira um valor para a altura.`));
+
+            const largura = parseInt(prompt(`Insira um valor para a largura.`));
+
+            const area = calculaArea(largura, altura);
+            alert(calculaArea(largura, altura));
+        }
+
+        const mostrarAreaOutput = () => {
+
+            const altura = parseInt(prompt(`Insira um valor para a altura.`));
+
+            const largura = parseInt(prompt(`Insira um valor para a largura.`));
+
+            document.querySelector('#output').innerHTML = calculaArea(largura, altura);
+        }
+
+        const calculaArea = (l, a) => {
+            return l * a;
+        }
     </script>
 </body>
 
