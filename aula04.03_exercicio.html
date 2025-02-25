@@ -1,0 +1,78 @@
+<!--Faça uma mini calculadora, que peça um número inicial e tenha botões na tela para somar e pedir um novo 
+para fazer a operação-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora improvisada</title>
+</head>
+
+<body>
+
+    <h1>Teste de funções</h1>
+
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('/')">/</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        let numberOne = parseInt(prompt('Insira um número'));
+
+        function escreve(mensagem) {
+
+            const output = document.querySelector('#output');
+
+            output.innerHTML = mensagem;
+        }
+
+        function iniciarCalculo(simbolo) {
+
+            let numberOne = parseFloat(document.querySelector('#output').textContent);
+
+            let numberTwo = parseFloat(prompt('Digite outro número'));
+
+            let msg = calcular(simbolo, numberOne, numberTwo)
+
+            escreve(msg);
+        }
+
+        escreve(numberOne);
+
+
+        function calcular(simbolo, numberOne, numberTwo) {
+
+            let numeroCalculado = null;
+
+            switch (simbolo) {
+
+                case '+':
+                    numeroCalculado = numberOne + numberTwo;
+                    break;
+
+                case '-':
+                    numeroCalculado = numberOne - numberTwo;
+                    break;
+
+                case '/':
+                    numeroCalculado = numberOne / numberTwo;
+                    break;
+
+                case '*':
+                    numeroCalculado = numberOne * numberTwo;
+            }
+
+            return numeroCalculado;
+        }
+    </script>
+
+</body>
+
+</html>
