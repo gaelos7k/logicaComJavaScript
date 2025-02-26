@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculadora</title>
+</head>
+
+<body>
+
+    <h1>Mini Calculadora</h1>
+
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('/')">/</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        let primeiroNumero = parseFloat(prompt('Insira um número.'))
+
+        function escreve(mensagem) {
+
+            const output = document.querySelector('#output');
+            output.innerHTML = mensagem;
+        }
+
+        function iniciarCalculo(simbolo) {
+
+            primeiroNumero = parseFloat(document.querySelector('#output').textContent);
+            let segundoNumero = parseFloat(prompt('Insira outro número.'));
+            let msg = calcular(simbolo, primeiroNumero, segundoNumero);
+
+            escreve(msg);
+        }
+
+        escreve(primeiroNumero);
+
+        function calcular(simbolo, primeiroNumero, segundoNumero) {
+
+            let numeroCalculado = null;
+
+            switch (simbolo) {
+
+                case '+':
+                    numeroCalculado = primeiroNumero + segundoNumero;
+                    break;
+
+                case '-':
+                    numeroCalculado = primeiroNumero - segundoNumero;
+                    break;
+
+                case '/':
+                    numeroCalculado = primeiroNumero / segundoNumero;
+                    break;
+
+                case '*':
+                    numeroCalculado = primeiroNumero * segundoNumero;
+            }
+
+            return numeroCalculado;
+        }
+
+    </script>
+</body>
+
+</html>
