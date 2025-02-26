@@ -22,8 +22,10 @@
 
         let primeiroNumero = parseFloat(prompt('Insira um número.'));
 
-        while (isNaN(primeiroNumero) === true) {
-            primeiroNumero = parseFloat(prompt('Insira um número válido.'));
+        function verificacao(variavel) {
+            while (isNaN(variavel) === true) {
+                variavel = parseFloat(prompt('Insira um número válido.'));
+            }
         }
 
         function escreve(mensagem) {
@@ -41,7 +43,8 @@
             escreve(msg);
         }
 
-        escreve(primeiroNumero);
+        verificacao(primeiroNumero);
+        escreve(primeiroNumero); //EXISTE ALGUM ERRO AQUI NA FUNCAO ESCREVE
 
         function calcular(simbolo, primeiroNumero, segundoNumero) {
 
