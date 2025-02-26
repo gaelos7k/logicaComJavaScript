@@ -1,0 +1,17 @@
+throw new Error = Usado quando quero disparar um erro no console. Quando quero dar um erro em tempo real no programa. Ele para a execução do programa.
+
+	            try {
+
+            } catch (e) {
+
+            }
+Normalmente usado no bloco de códifo try catch o parametro e de erro.
+
+Tenta executar o primeiro código, se der erro ele executa o bloco catch(e). Dentro do bloco escolhemos como vamos querer tratar o erro, se vamos dar um alert, se vamos mostrar no console.
+
+O bloco não para a função, da erro, mostra no console e continua o código.
+
+Try Catch usado para tratamento de erro, para não deixar ser disparado no browser.
+
+
+

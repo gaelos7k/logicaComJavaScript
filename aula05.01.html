@@ -39,7 +39,16 @@ para fazer a operação-->
 
             let numberTwo = parseFloat(prompt('Digite outro número'));
 
-            let msg = calcular(simbolo, numberOne, numberTwo)
+            let msg;
+
+            try {
+
+                msg = calcular(simbolo, numberOne, numberTwo); //Tenta executar isso aqui.
+
+            } catch (e) { //(e de erro) Se der erro.
+                alert(e); //Executa isso aqui.
+                return;
+            }
 
             escreve(msg);
         }
@@ -49,14 +58,12 @@ para fazer a operação-->
 
         function calcular(simbolo, numberOne, numberTwo) {
 
-            if (simbolo !== '+' || simbolo !== '-' || simbolo !== '/' || simbolo !== '*') {
-                alert('Digite um simbolo válido...');
-                return 0;
+            if (simbolo !== '+' && simbolo !== '-' && simbolo !== '/' && simbolo !== '*') {
+                throw new Error('Digite um simbolo válido...');
             }
 
             if (isNaN(numberOne) || isNaN(numberTwo)) {
-                alert('Chama passando apenas números..');
-                return 0;
+                throw new Error('Chama passando apenas números..');
             }
 
             let numeroCalculado = null;
