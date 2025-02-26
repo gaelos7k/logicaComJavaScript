@@ -20,7 +20,11 @@
 
     <script>
 
-        let primeiroNumero = parseFloat(prompt('Insira um número.'))
+        let primeiroNumero = parseFloat(prompt('Insira um número.'));
+
+        while (isNaN(primeiroNumero) === true) {
+            primeiroNumero = parseFloat(prompt('Insira um número válido.'));
+        }
 
         function escreve(mensagem) {
 
