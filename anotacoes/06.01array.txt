@@ -1,0 +1,20 @@
+var pessoas = new Array()
+
+O operador new significa que vamos criar um objeto limpo do tipo array, que é um conjunto de dados.
+
+pessoas[0] = 'jose'
+
+pessoas[1] = 'maria'
+
+pessoas[2] = 'joao'
+
+Armazenando dados dentro do array. Array é quando preciso agrupar informações.
+
+pessoas.push('fulano') - método javascript
+pessoas.push('fulano', 'siclano', 'beltrano')
+
+"Empurra" elementos dentro de um array.
+
+var nomes = new Array('Bia', 'Gael') - outro método.
+
+Posso adicionar string, numeros, boleanos, funcoes e etc... dentro de um array.
