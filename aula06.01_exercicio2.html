@@ -17,10 +17,22 @@
     const output = document.querySelector('#output');
 
     let numerosPares = new Array();
+    let numeroImpares = new Array();
+    let somaNumerosPares = 0;
 
     for (let i = 0; i < arr.length; i++) {
-
+        if (arr[i] % 2 === 0) {
+            numerosPares.push(arr[i]);
+        } else {
+            numeroImpares.push(arr[i]);
+        }
     }
+
+    for (let i = 0; i < numerosPares.length; i++) {
+        somaNumerosPares += numerosPares[i];
+    }
+
+    output.innerHTML = somaNumerosPares;
 
     //Mostrar na tela a soma dos número pares da array acima.
 </script>
