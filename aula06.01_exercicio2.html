@@ -13,26 +13,22 @@
 
 <script>
 
-    let arr = new Array(25, 30, 45, 28, 0, 12, 78, 64);
-    const output = document.querySelector('#output');
+    let numeros = new Array(25, 30, 45, 28, 0, 12, 78, 64);
 
-    let numerosPares = new Array();
-    let numeroImpares = new Array();
-    let somaNumerosPares = 0;
+    function somaOsPares(arr) {
+        let soma = 0;
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            numerosPares.push(arr[i]);
-        } else {
-            numeroImpares.push(arr[i]);
+        for (let i = 0; i < arr.length; i++) {
+            if (!isNaN(arr[i]) && arr[i] % 2 === 0) {
+                soma += arr[i];
+            }
         }
+        return soma;
     }
 
-    for (let i = 0; i < numerosPares.length; i++) {
-        somaNumerosPares += numerosPares[i];
-    }
+    let somaDosPares = somaOsPares(numeros);
 
-    output.innerHTML = somaNumerosPares;
+    alert(`A soma dos pares é: ${somaDosPares}`);
 
     //Mostrar na tela a soma dos número pares da array acima.
 </script>
