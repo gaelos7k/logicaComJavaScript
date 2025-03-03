@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de Programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1> Lógica de programação com Javascript</h1>
+
+    <div id="output"></div>
+</body>
+
+<script>
+
+    let produtos = new Array('Lápis', 'caneta', 'tesoura', 'borracha', 'caderno', 'livro');
+
+    produtos.push('compasso', 'cartolina');
+
+    const output = document.querySelector('#output');
+    //produtos.toString(); converão intencional para string 
+
+    let msg = '';
+
+    for (let i = 0; i < produtos.length; i++) {
+        msg += 'Produto ' + (i + 1) + ' : ' + produtos[i] + '<br>'
+    }
+
+    //produtos[i] iteração sobre arrays
+    //propriedade length sempre retorna o número de indices
+
+    output.innerHTML = msg;
+
+</script>
+
+</html>
