@@ -1,0 +1,9 @@
+let caneta = new Object() - Criando um novo objeto limpinho e armazenando na váriavel caneta.
+
+caneta.nome = 'Caneta'
+
+caneta.preco = '2'
+
+{nome: 'Caneta', preco: 2}
+
+um objeto com duas propriedades, uma chamada nome e a outra chama preco
