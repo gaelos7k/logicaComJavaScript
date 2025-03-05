@@ -1,0 +1,20 @@
+as 'variaveis' dentro de um objeto, são o que chamamos de propriedades.
+
+ex: produto1.nome "nome" é a propriedade do objeto produto1.
+
+método nada mais é que uma 'função' atrelada á um objeto.
+
+ex: produto1.comprar = function(){}
+
+lembrar que a função é chamada com a abertura e fechamento dos parenteses.
+
+função dentro de um objeto é um método.
+
+(this) dentro do javascript é uma 'auto referencia'.
+
+no caso seria o proprio objeto.
+
+ex:     produto1.comprar = function () {
+        console.log('comprou caneta');
+        console.log(this);
+    }

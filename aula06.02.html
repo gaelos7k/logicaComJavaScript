@@ -14,13 +14,30 @@
 
 <script>
 
-    let produto = new Object();
+    let produto1 = new Object();
 
-    produto.nome = 'caneta'
-    produto.estoque = 10
-    produto.preco = 2.2
+    produto1.nome = 'caneta'
+    produto1.estoque = 10
+    produto1.preco = 2.2
+
+    produto1.comprar = function (qtd) {
+        console.log('comprou caneta');
+        if (!qtd) {
+            qtd = 1;
+        }
+        this.estoque = this.estoque - qtd;
+        //this.estoque--; //-- ou ++ lembre-se que é decremento e incremento.
+        console.log('Resta ' + this.estoque + ' em estoque.');
+
+    }
 
     let msg = '';
+
+    msg += 'nome: ' + produto1.nome + '<br>';
+    msg += 'preco: ' + produto1.preco + '<br>';
+    msg += 'estoque: ' + produto1.estoque + '<br>';
+
+    document.querySelector('#output').innerHTML = msg;
 
 </script>
 
