@@ -1,0 +1,17 @@
+Outras maneiras de criar array e objeto sem ser com o método new Array() e new Object():
+
+let nome = ['maria', 'jose']
+
+let prod = {'nome': 'caneta', 'preco': '1.1'}
+
+array de produtos:
+
+let produtos = [prod, {'nome': 'lapis', 'preco': 2}]
+
+produtos[0].nome = acessando o elemento nome do objeto no indice 0 do array.
+
+sempre que precisar iterar cada elemento do array é necessário utilizar um loop.
+
+ARRAY DE OBJETOS:
+
+Conjunto de dados ({}) agrupados dentro de um array ([])
